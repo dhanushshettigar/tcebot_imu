@@ -22,6 +22,18 @@ dtparam=i2c_arm=on
 
 Save and exit (CTRL + X, then Y, then ENTER).
 
+### Connecting BNO055 to Raspberry Pi
+
+| BNO055 Pin | Raspberry Pi Pin |
+|------------|-----------------|
+| VCC        | 3.3V (Pin 1)     |
+| GND        | GND (Pin 6)      |
+| SCL        | GPIO3 (Pin 5)    |
+| SDA        | GPIO2 (Pin 3)    |
+| INT        | Not required (Optional for interrupts) |
+
+> **Note:** BNO055 can work with 3.3V or 5V, but it is safer to use 3.3V to avoid damage.
+
 ### 3. Check I2C Device Connection
 
 After connecting the BNO055 sensor to the I2C pins, run:
